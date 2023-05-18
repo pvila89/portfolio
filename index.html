@@ -4,65 +4,258 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pau Vila Fernández</title>
+    <meta name="Description" content="Software engineer's portfolio showcasing projects, skills, and expertise in concise and impactful manner">
+    <meta property="og:title" content="Pau Vila - Portfolio">
+    <meta property="og:description" content="Software engineer's portfolio showcasing projects, skills, and expertise in concise and impactful manner">
+    <meta property="og:type" content="Portfolio">
+    <meta property="og:image" content="http://">
+    <meta property="og:url" content="http://pauvilafernandez.cat">
+
+
+    <title>Pau Vila - Portfolio</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
         <nav class="nav collapsible ">
-            <a class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a>
+            <!-- <a class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a> -->
+            <a href="/" class="nav__brand">
+                    <svg class="icon icon--white">
+                        <use xlink:href="images/sprite.svg#computer"></use>
+                    </svg>
+            </a>
             <svg class="icon icon--white nav__toggler">
                 <use xlink:href="images/sprite.svg#menu"></use>
             </svg>
             <ul class="list nav__list collapsible__content">
-                <li class="nav__item"><a href="">VPS</a></li>
-                <li class="nav__item"><a href="">Hosting</a></li>
-                <li class="nav__item"><a href="">Domain</a></li>
-                <li class="nav__item"><a href="">Pricing</a></li>
+                <li class="nav__item"><a href="#experiencia">Experience</a></li>
+                <li class="nav__item"><a href="#skills">Skills</a></li>
+                <li class="nav__item"><a href="#studies">Studies</a></li>
+                <li class="nav__item"><a href="#me">Me</a></li>
             </ul>
         </nav>
     </header>
-    <section class="block block--dark block--skewed-left hero">
+    <section class="block block--purple block--skewed-left hero">
         <div class="container grid grid--1x2">
             <header class="block__header hero__content">
-                <h1 class="block__heading">Cloud Hosting for Pros</h1>
-                <p class="hero__tagline">Deploy your websites in less than 60seconds.</p>
-                <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+                <h1 data-aos="zoom-in-up"  class="block__heading">Hi! I'm Pau</h1>
+                <p class="hero__tagline">Passionate software engineer, embracing coding and eager to <span class="item--bold">explore</span>. Curious, dedicated, and constantly seeking new opportunities for growth and learning.</p>
             </header>
-            <picture>
-                <source type="image/webp" srcset="images/banner.webp 1x, images/banner@2x.webp 2x" >
-                <source type="image/png" srcset="images/banner.png 1x, images/banner@2x.png 2x" >
-                <img class="hero__image" src="images/banner.png" alt="">
-            </picture>
+            <img  data-aos="zoom-in" class="hero__image" src="images/astronaut.png" alt="">  
         </div>
     </section>
-    <section class="block container block-domain">
-        <header class="block__header">
-            <h2>Stargin at 9 per month</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio facere, iusto magnam quam eos cum quaerat ullam maiores eveniet voluptatibus!</p>
+   
+    <section class="block container">
+        <header  id="experiencia" class="block__header">
+            <h2>Professional Work Experience</h2>
+            <p>These are the companies I have worked for.</p>
         </header>
-        <div class="input-group">
-            <input type="text" class="input" placeholder="Enter domain name here...">
-            <button class="btn btn--accent">    
-                <svg class="icon icon--white">
-                    <use xlink:href="images/sprite.svg#search"></use>
-                </svg>
-                SEARCH
-            </button>
+        <article class="grid grid--1x2 feature" >
+            <div class="feature__content" data-aos="fade-right">
+                <h3 class="feature__heading">Cooltivat</h3>
+                <p>
+                    Led full lifecycle development of a website, prioritizing technical implementation. Created and optimized an API for seamless system communication and efficient data handling. Designed user-friendly front-end interface to improve usability. Streamlined database structure for optimal storage and retrieval. Collaborated with co-founder to align business objectives with technical strategies.</p>
+                <a href="https://cooltivat.com" class="link-arrow" target="_blank">Learn More</a>
+            </div>
+            <picture data-aos="zoom-in-left">
+                <!-- <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
+                <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"> -->
+                <img class="feature__image" src="images/cooltivat.jpg" alt="">
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div  class="feature__content"  data-aos="fade-up">
+                <h3 class="feature__heading">Contecnow</h3>
+                <p>Streamlined internal processes through web and desktop applications, enhancing efficiency. Created user-friendly solutions to optimize workflow. Collaborated with cross-functional teams, effectively translating business requirements into successful software implementations.</p>
+                <a href="https://contecnow.com/" class="link-arrow"  target="_blank">Learn More</a>
+            </div>
+            <picture  data-aos="zoom-in-left">
+                <!-- <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
+                <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"> -->
+                <img class="feature__image" src="images/contecnow.jpg" alt="">
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div  class="feature__content" data-aos="fade-up">
+                <h3 class="feature__heading">E·tic Consulting</h3>
+                <p>Built and maintained secure web applications adhering to industry standards. Developed scalable solutions to ensure optimal performance and user satisfaction. Collaborated with cross-functional teams to analyze requirements, resulting in the delivery of innovative web applications.</p>
+            </div>
+            <picture  data-aos="zoom-in-left">
+                <!-- <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
+                <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"> -->
+                <img class="feature__image" src="images/etic.jpg" alt="">
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div  class="feature__content" data-aos="fade-up">
+                <h3 class="feature__heading">Ribé Salat</h3>
+                <p>
+                    Developed and maintained efficient web and desktop applications, streamlining internal processes and improving operations. Implemented and managed web and desktop applications to enhance user-friendliness of internal systems, contributing to streamlined processes. Played a key role in improving internal operations through the development and maintenance of effective web and desktop applications, resulting in higher levels of efficiency.</p>
+                <a href="https://ribesalat.com/" class="link-arrow"  target="_blank">Learn More</a>
+            </div>
+            <picture  data-aos="zoom-in-left">
+                <!-- <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
+                <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"> -->
+                <img class="feature__image" src="images/ribesalat.jpg" alt="">
+            </picture>
+        </article>
+        <article class="grid grid--1x2 feature">
+            <div  class="feature__content" data-aos="fade-up">
+                <h3 class="feature__heading">Itèquia</h3>
+                <p>
+                    Efficiently implemented and maintained web and mobile applications, ensuring smooth operation. Streamlined processes through the development and management of these applications. Provided ongoing maintenance and support to ensure the seamless functioning of web and mobile applications.</p>
+                <a href="https://itequia.com/es/" class="link-arrow"  target="_blank">Learn More</a>
+            </div>
+            <picture  data-aos="zoom-in-left">
+                <!-- <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
+                <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"> -->
+                <img class="feature__image" src="images/itequia.jpg" alt="">
+            </picture>
+        </article>
+    
+    </section>
+    <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header">
+            <h2>User friendly Control Panel</h2>
+        </header>
+        <div class="container grid grid--1x2">
+            <picture  data-aos="fade-right"  class="block-showcase__image">
+                <source  type="image/webp" srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x">
+                <source  type="image/png" srcset="images/ipad.png 1x, images/ipad@2x.png 2x">
+                <img src="images/ipad.png" alt="">
+            </picture>
+            <ul class="list block-showcase__list" data-aos="fade-up">
+                <li>
+                    <div class="media">
+                        <div class="media__image">
+                                <svg class="icon icon--primary">
+                                    <use xlink:href="images/sprite.svg#snap"></use>
+                                </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Easy Start and Managed Updates</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus ex soluta perferendis ratione odit, voluptates consectetur fugit accusantium unde totam blanditiis? Aspernatur autem, veritatis laboriosam debitis quidem iusto ad commodi illum, aut nisi reprehenderit? Placeat porro odit ut aspernatur saepe molestias voluptate! Quia temporibus aspernatur tempora quasi inventore assumenda!</p>
+                        </div>
+                    </div>
+                </li>
+                <li>                    
+                    <div class="media">
+                        <div class="media__image">
+                                <svg class="icon icon--primary">
+                                    <use xlink:href="images/sprite.svg#snap"></use>
+                                </svg>
+                        </div>
+                        <div class="media__body">
+                            <h3 class="media__title">Easy Start and Managed Updates</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa accusamus ex soluta perferendis ratione odit, voluptates consectetur fugit accusantium unde totam blanditiis? Aspernatur autem, veritatis laboriosam debitis quidem iusto ad commodi illum, aut nisi reprehenderit? Placeat porro odit ut aspernatur saepe molestias voluptate! Quia temporibus aspernatur tempora quasi inventore assumenda!</p>
+                        </div>
+                    </div>
+                </li>
+                <li></li>
+            </ul>
         </div>
-        <ul class="list block-domain__prices">
-            <li><div class="badge badge--secondary">test</div></li>
-            <li>asdf</li>
-            <li>asdf</li>
-            <li>asdf</li>
-            <li>asfd</li>
-            <li>asdf</li>
-        </ul>
-       </section>
+    </section>
+    <section class="block">
+        <header class="block__header"  data-aos="zoom-in">
+            <h2>What our Customers are Saying</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, officiis.</p>
+        </header>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img  src="images/testimonial.jpg" alt="A happy, smiling customer">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--white icon--small">
+                                <use xlink:href="images/sprite.svg#quotes"></use>
+                            </svg>
+                        </span>
+                    </div>
+                    <blockquote class="quote">
+                        <p class="quote__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi quidem commodi facere est doloribus earum a ipsam reiciendis, possimus in?</p>
+                        <footer>
+                            <div class="media">
+                                <div class="media__image">
+                                        <svg class="icon icon--primary quote__line">
+                                            <use xlink:href="images/sprite.svg#line"></use>
+                                        </svg>
+                                </div>
+                                <div class="media__body">
+                                    <h3 class="media__title quote__author">John Smith</h3>
+                                    <p class="quote__organitzation">ABC Company</p>
+                                </div>
+                               </div>
+                        </footer>
+                      </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="block block--dark footer">
+        <div class="container grid footer__sections">
+            <section class="collapsible collapsible--expanded footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer_heading">Item 1</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content footer__collapsible__content">
+                    <ul class="list">
+                        <li><a href="">Website Hosting</a></li>
+                        <li><a href="">Website Hosting</a></li>
+                        <li><a href="">Website Hosting</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer_heading">Item 2</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content footer__collapsible__content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum sapiente dolore optio error eaque impedit? Sint ullam atque iure.
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer_heading">Item 3</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content footer__collapsible__content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum sapiente dolore optio error eaque impedit? Sint ullam atque iure.
+                </div>
+            </section>
+            <section class="collapsible footer__section">
+                <div class="collapsible__header">
+                    <h2 class="collapsible__heading footer_heading">Item 4</h2>
+                    <svg class="icon icon--white collapsible__chevron">
+                        <use xlink:href="images/sprite.svg#chevron"></use>
+                    </svg>
+                </div>
+                <div class="collapsible__content footer__collapsible__content">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium rerum sapiente dolore optio error eaque impedit? Sint ullam atque iure.
+                </div>
+            </section>
+            <div class="footer__brand footer_section">
+                <img src="images/logo.svg" alt="">
+                <p class="footer__copyright">CopyRight 2023 Pau Vila</p>
+            </div>
+        </div>
+    </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
