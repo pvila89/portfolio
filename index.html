@@ -8,7 +8,6 @@
     <meta property="og:title" content="Pau Vila - Portfolio">
     <meta property="og:description" content="Software engineer's portfolio showcasing projects, skills, and expertise in concise and impactful manner">
     <meta property="og:type" content="Portfolio">
-    <meta property="og:image" content="http://">
     <meta property="og:url" content="http://pauvilafernandez.cat">
 
 
@@ -23,11 +22,10 @@
 <body>
     <header>
         <nav class="nav collapsible ">
-            <!-- <a class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a> -->
             <a href="/" class="nav__brand">
-                    <svg class="icon icon--white">
-                        <use xlink:href="images/sprite.svg#computer"></use>
-                    </svg>
+                <svg class="icon icon--white">
+                    <use xlink:href="images/sprite.svg#computer"></use>
+                </svg>
             </a>
             <svg class="icon icon--white nav__toggler">
                 <use xlink:href="images/sprite.svg#menu"></use>
@@ -35,7 +33,8 @@
             <ul class="list nav__list collapsible__content">
                 <li class="nav__item"><a href="#experiencia">Experience</a></li>
                 <li class="nav__item"><a href="#education">Education</a></li>
-                <li class="nav__item"><a href="#me">Me</a></li>
+                <li class="nav__item"><a href="#me">About Me</a></li>
+                <li class="nav__item"><a href="https://www.linkedin.com/in/pau-vila-52a1333b/" target="_blank">Linkedin</a></li>
             </ul>
         </nav>
     </header>
@@ -45,7 +44,11 @@
                 <h1 data-aos="zoom-in-up"  class="block__heading">Hi! I'm Pau</h1>
                 <p class="hero__tagline">Passionate software engineer, embracing coding and eager to <span class="item--bold">explore</span>. Curious, dedicated, and constantly seeking new opportunities for growth and learning.</p>
             </header>
-            <img  data-aos="zoom-in" class="hero__image" src="images/astronaut.png" alt="">  
+            <picture data-aos="zoom-in-left">
+                <source type="image/webp" srcset="images/astronaut.webp 1x, images/astronaut@2x.webp 2x">
+                <source type="image/png" srcset="images/astronaut.jpg 1x, images/astronaut@2x.jpg 2x">
+                <img class="hero__image" src="images/astronaut.jpg" alt="">
+            </picture>
         </div>
     </section>
    
@@ -57,63 +60,113 @@
         <article class="grid grid--1x2 feature" >
             <div class="feature__content" data-aos="fade-right">
                 <h3 class="feature__heading">Cooltivat</h3>
-                <p>
+                <p>Jun 2020 - Present</p>
+                <p class="feature__description">
                     Led full lifecycle development of a website, prioritizing technical implementation. Created and optimized an API for seamless system communication and efficient data handling. Designed user-friendly front-end interface to improve usability. Streamlined database structure for optimal storage and retrieval. Collaborated with co-founder to align business objectives with technical strategies.</p>
-                <a href="https://cooltivat.com" class="link-arrow" target="_blank">Learn More</a>
+                    <span class="badge badge--primary">React</span>
+                    <span class="badge badge--primary">Node</span>
+                    <span class="badge badge--primary">MySQL</span>
+                    <span class="badge badge--primary">TypeScript</span>
+                    <span class="badge badge--primary">Rest API</span>
+                    <span class="badge badge--primary">HTML</span>
+                    <span class="badge badge--primary">CSS</span>
+                    <span class="badge badge--primary">Git</span>
+                    <span class="badge badge--primary">Heroku</span>
+                    <a href="https://cooltivat.com" class="link-arrow" target="_blank">Learn More</a>
             </div>
             <picture data-aos="zoom-in-left">
-                <!-- <source type="image/webp" srcset="images/easy.webp 1x, images/easy@2x.webp 2x">
-                <source type="image/jpg" srcset="images/easy.jpg 1x, images/easy@2x.jpg 2x"> -->
-                <img class="feature__image" src="images/cooltivat.jpg" alt="">
+                <source type="image/webp" srcset="images/cooltivat.webp 1x, images/cooltivat@2x.webp 2x">
+                <source type="image/png" srcset="images/cooltivat.png 1x, images/cooltivat@2x.png 2x">
+                <img class="feature__image" src="images/cooltivat.png" alt="">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
             <div  class="feature__content"  data-aos="fade-up">
                 <h3 class="feature__heading">Contecnow</h3>
+                <p>Jun 2017 - Jul 2020</p>
                 <p>Streamlined internal processes through web and desktop applications, enhancing efficiency. Created user-friendly solutions to optimize workflow. Collaborated with cross-functional teams, effectively translating business requirements into successful software implementations.</p>
+                <span class="badge badge--primary">React</span>
+                <span class="badge badge--primary">Node</span>
+                <span class="badge badge--primary">MySQL</span>
+                <span class="badge badge--primary">TypeScript</span>
+                <span class="badge badge--primary">Rest API</span>
+                <span class="badge badge--primary">HTML</span>
+                <span class="badge badge--primary">CSS</span>
+                <span class="badge badge--primary">Git</span>
+                <span class="badge badge--primary">Azure</span>
                 <a href="https://contecnow.com/" class="link-arrow"  target="_blank">Learn More</a>
             </div>
             <picture  data-aos="zoom-in-left">
-                <!-- <source type="image/webp" srcset="images/fast.webp 1x, images/fast@2x.webp 2x">
-                <source type="image/jpg" srcset="images/fast.jpg 1x, images/fast@2x.jpg 2x"> -->
-                <img class="feature__image" src="images/contecnow.jpg" alt="">
+                <source type="image/webp" srcset="images/contecnow.webp 1x, images/contecnow@2x.webp 2x">
+                <source type="image/jpg" srcset="images/contecnow.png 1x, images/contecnow.png 2x">
+                <img class="feature__image" src="images/contecnow.png" alt="">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
             <div  class="feature__content" data-aos="fade-up">
                 <h3 class="feature__heading">E·tic Consulting</h3>
+                <p>Jun 2016 - Jul 2017</p>
                 <p>Built and maintained secure web applications adhering to industry standards. Developed scalable solutions to ensure optimal performance and user satisfaction. Collaborated with cross-functional teams to analyze requirements, resulting in the delivery of innovative web applications.</p>
+                <span class="badge badge--primary">ASP.NET</span>
+                <span class="badge badge--primary">C#</span>
+                <span class="badge badge--primary">MVC</span>
+                <span class="badge badge--primary">Rest API</span>
+                <span class="badge badge--primary">HTML</span>
+                <span class="badge badge--primary">CSS</span>
+                <span class="badge badge--primary">Git</span>
+                <span class="badge badge--primary">Windows Server</span>
+            
             </div>
             <picture  data-aos="zoom-in-left">
-                <!-- <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
-                <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"> -->
-                <img class="feature__image" src="images/etic.jpg" alt="">
+                <source type="image/webp" srcset="images/etic.webp 1x, images/etic@2x.webp 2x">
+                <source type="image/jpg" srcset="images/etic.png 1x, images/etic@2x.png 2x">
+                <img class="feature__image" src="images/etic.png" alt="">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
             <div  class="feature__content" data-aos="fade-up">
                 <h3 class="feature__heading">Ribé Salat</h3>
+                <p>Oct 2015 - Jun 2016</p>
                 <p>
                     Developed and maintained efficient web and desktop applications, streamlining internal processes and improving operations. Implemented and managed web and desktop applications to enhance user-friendliness of internal systems, contributing to streamlined processes. Played a key role in improving internal operations through the development and maintenance of effective web and desktop applications, resulting in higher levels of efficiency.</p>
-                <a href="https://ribesalat.com/" class="link-arrow"  target="_blank">Learn More</a>
+                    <span class="badge badge--primary">ASP.NET</span>
+                    <span class="badge badge--primary">C#</span>
+                    <span class="badge badge--primary">Java</span>
+                    <span class="badge badge--primary">MVC</span>
+                    <span class="badge badge--primary">Rest API</span>
+                    <span class="badge badge--primary">HTML</span>
+                    <span class="badge badge--primary">CSS</span>
+                    <span class="badge badge--primary">Git</span>
+                    <span class="badge badge--primary">Windows Server</span>   
+                    <a href="https://ribesalat.com/" class="link-arrow"  target="_blank">Learn More</a>
             </div>
             <picture  data-aos="zoom-in-left">
-                <!-- <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
-                <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"> -->
-                <img class="feature__image" src="images/ribesalat.jpg" alt="">
+                <source type="image/webp" srcset="images/ribesalat.webp 1x, images/ribesalat@2x.webp 2x">
+                <source type="image/jpg" srcset="images/ribesalat.png 1x, images/ribesalat@2x.png 2x">
+                <img class="feature__image" src="images/ribesalat.png" alt="">
             </picture>
         </article>
         <article class="grid grid--1x2 feature">
             <div  class="feature__content" data-aos="fade-up">
                 <h3 class="feature__heading">Itèquia</h3>
+                <p>Oct 2013 - Oct 2015</p>
                 <p>
                     Efficiently implemented and maintained web and mobile applications, ensuring smooth operation. Streamlined processes through the development and management of these applications. Provided ongoing maintenance and support to ensure the seamless functioning of web and mobile applications.</p>
-                <a href="https://itequia.com/es/" class="link-arrow"  target="_blank">Learn More</a>
+                    <span class="badge badge--primary">ASP.NET</span>
+                    <span class="badge badge--primary">C#</span>
+                    <span class="badge badge--primary">Sharepoint</span>
+                    <span class="badge badge--primary">MVC</span>
+                    <span class="badge badge--primary">Xamarin</span>
+                    <span class="badge badge--primary">HTML</span>
+                    <span class="badge badge--primary">CSS</span>
+                    <span class="badge badge--primary">Subversion</span>
+                    <span class="badge badge--primary">Windows Server</span>               
+                    <a href="https://itequia.com/es/" class="link-arrow"  target="_blank">Learn More</a>
             </div>
             <picture  data-aos="zoom-in-left">
-                <!-- <source type="image/webp" srcset="images/wordpress.webp 1x, images/wordpress@2x.webp 2x">
-                <source type="image/jpg" srcset="images/wordpress.jpg 1x, images/wordpress@2x.jpg 2x"> -->
-                <img class="feature__image" src="images/itequia.jpg" alt="">
+                <source type="image/webp" srcset="images/itequia.webp 1x, images/itequia@2x.webp 2x">
+                <source type="image/jpg" srcset="images/itequia.png 1x, images/itequia@2x.png 2x">
+                <img class="feature__image" src="images/itequia.png" alt="">
             </picture>
         </article>
     
@@ -138,11 +191,6 @@
                 </li>
                 <li>                    
                     <div class="media">
-                        <!-- <div class="media__image">
-                                <svg class="icon icon--primary">
-                                    <use xlink:href="images/sprite.svg#snap"></use>
-                                </svg>
-                        </div> -->
                         <div class="media__body">
                             <h3 class="media__title">TUT - Tampere University of Technology</h3>
                             <p>Tampere, Finland <br/> 09/2012-05/2013</p>
@@ -166,7 +214,7 @@
                        
                     </div>
                     <blockquote class="quote">
-                        <p>I am an individual who thrives on staying updated and constantly seeks out new technologies to explore. My passion for learning extends beyond the technological realm and encompasses personal growth as well. With a deep appreciation for staying current in an ever-changing world, I eagerly embrace opportunities to expand my horizons. Whether it's diving into the latest advancements in technology or embarking on a journey of self-improvement, I am driven by a genuine curiosity that fuels my continuous pursuit of knowledge.</p>
+                        <p>I am an individual who thrives on staying updated and constantly seeks out new technologies to explore. My passion for learning extends beyond the technological realm and encompasses personal growth as well. With a deep appreciation for staying current in an ever-changing world, I eagerly embrace opportunities to expand my horizons. Whether it's diving into the latest advancements in technology or embarking on a journey of self-improvement.</p>
                       </blockquote>
                 </div>
             </div>
