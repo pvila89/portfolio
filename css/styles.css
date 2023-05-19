@@ -533,11 +533,12 @@ a {
 /* Testimonials */
 
 .testimonial {
-    padding: 3rem;
+    padding: 3rem 0;
 }
 
 .testimonial__image {
     position: relative;
+    margin: 0 3rem;
 }
 
 .testimonial__image > img{
@@ -645,8 +646,8 @@ a {
 /* Blocks */
 
 .block {
-    --padding-vertical: 6rem;
-    padding: var(--padding-vertical);
+    --padding-vertical: 5rem;
+    padding: var(--padding-vertical) 2rem;
     text-align: center;
 }
 
