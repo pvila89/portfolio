@@ -66,6 +66,22 @@ p  {
     color: rgb(207, 207, 207);
 }
 
+.animated--dash {
+    animation: dash-animation 0.7s infinite;
+}
+
+@keyframes dash-animation {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
 @media screen and (min-width: 1024px) {
     body {
         font-size: 1.8rem;
